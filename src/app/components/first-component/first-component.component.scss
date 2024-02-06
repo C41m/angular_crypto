@@ -1,0 +1,33 @@
+.containercoin {
+  max-width: 1366px;
+  margin: auto 20px;
+  background-color: #d7e3ff;
+  border: 5px solid white;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 15px;
+
+  .cointable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #d7e3ff;
+
+    .contabledetails {
+      display: flex;
+      flex-direction: column;
+
+      .coin {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+
+        p {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
