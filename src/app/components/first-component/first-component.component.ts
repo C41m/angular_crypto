@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { ConversorComponent } from '../conversor/conversor.component';
 
 @Component({
   selector: 'app-first-component',
@@ -7,10 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './first-component.component.scss',
 })
 export class FirstComponentComponent {
-  apiUrl = 'https://api.coinpaprika.com/v1/coins';
-  responseData: any;
+  quote: number = 0;
+  valuedol = [100];
 
-  constructor(private http: HttpClient) {}
+  constructor(private conversorComponent: ConversorComponent) {}
+
+  ngOnInit(): void {
+    this.quote = this.conversorComponent.quote;
+  }
+
+  // apiUrl = 'https://api.coinpaprika.com/v1/coins';
+  // responseData: any;
 
   // ngOnInit() {
   //   this.getCoins();

@@ -1,0 +1,10 @@
+.contabledetails {
+  display: flex;
+  flex-direction: column;
+
+  .coin {
+    display: flex;
+    gap: 50px;
+    color: white;
+  }
+}

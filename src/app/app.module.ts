@@ -13,7 +13,7 @@ import { ConversorComponent } from './components/conversor/conversor.component';
 @NgModule({
   declarations: [AppComponent, FirstComponentComponent, ConversorComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [provideClientHydration()],
+  providers: [provideClientHydration(), ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
